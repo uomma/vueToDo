@@ -5,7 +5,7 @@ const { createApp } = Vue;
 createApp({
     data() {
         return {
-            newKey:'',
+            newKey: '',
             pageTitle: 'my to do list in vue.js ',
             todoList: [
                 'fare la spesa',
@@ -18,8 +18,15 @@ createApp({
     methods: {
         deleteTodo(index) {
             console.log('elimina')
-            this.todoList.splice(index, 1) 
+            this.todoList.splice(index, 1)
         },
+
+        addTodo() {
+            console.log('add')
+            if (this.newKey !== '') {
+                this.todoList.push(this.newKey)
+            }
+        }
     }
 
 }).mount('#app');

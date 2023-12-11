@@ -23,7 +23,7 @@
         <main>
             <div class="container">
                 <ul class="list">
-                    <li><input type="text" placeholder="inserisci qualcosa"></li>
+                    <li><input type="text" placeholder="inserisci qualcosa"  v-model="newKey"><button @click="addTodo">add</button></li>
                     <li class="item" v-for="(todo, index) in todoList">
                         <div>{{index}}{{todo}}</div>
                         <i class="fa-solid fa-trash" @click="deleteTodo"></i>

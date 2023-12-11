@@ -5,7 +5,7 @@ const { createApp } = Vue;
 createApp({
     data() {
         return {
-
+            newKey:'',
             pageTitle: 'my to do list in vue.js ',
             todoList: [
                 'fare la spesa',

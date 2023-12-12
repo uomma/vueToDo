@@ -6,6 +6,7 @@ createApp({
     data() {
         return {
             newKey: '',
+            searchKey: '',
             pageTitle: 'my to do list in vue.js ',
             todoList: [
                 'fare la spesa',
@@ -26,7 +27,18 @@ createApp({
             if (this.newKey !== '') {
                 this.todoList.push(this.newKey)
             }
+        },
+
+        searchTodo() {
+            if (this.searchKey === this.todoList){
+                console.log(searchKey)
+
+            }else{
+
+            }
         }
+
+
     }
 
 }).mount('#app');
